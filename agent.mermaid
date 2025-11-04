@@ -1,0 +1,23 @@
+graph TD
+    Start([Space Mission Start]):::start
+    OM[Orbital Mechanics Agent<br/>Calculate trajectories]
+    SM[Satellite Manager<br/>Constellation coordination]
+    CA[Collision Avoidance Agent<br/>Monitor threats]
+    MP[Mission Planner<br/>Optimize mission]
+    GC[Ground Coordinator<br/>Earth-space communication]
+    MA[Maintenance Agent<br/>Health monitoring]
+    SD[Debris Monitor<br/>Space debris tracking]
+    End([Mission Complete]):::end
+    
+    Start --> OM
+    OM --> SM
+    SM --> CA
+    CA --> MP
+    MP --> GC
+    GC --> MA
+    MA --> SD
+    SD --> End
+    
+    classDef start fill:#00ff00,stroke:#333,stroke-width:3px
+    classDef end fill:#ff0000,stroke:#333,stroke-width:3px
+    classDef default fill:#f2f0ff,stroke:#333,stroke-width:2px

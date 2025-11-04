@@ -1,0 +1,99 @@
+{
+  "mission_name": "Space Mission",
+  "satellite_count": 5,
+  "mission_duration": "24 hours",
+  "objectives": [
+    "Maintain 99.9% satellite uptime",
+    "Ensure 99.8% global coverage",
+    "Keep communication latency < 50ms",
+    "Prevent all collision incidents",
+    "Optimize resource utilization"
+  ],
+  "satellites": [
+    {
+      "id": "SAT-001",
+      "name": "Communication Alpha",
+      "type": "Communication",
+      "altitude": 400,
+      "inclination": 51.6,
+      "longitude": -180,
+      "latitude": 0,
+      "status": "Active"
+    },
+    {
+      "id": "SAT-002", 
+      "name": "Navigation Beta",
+      "type": "Navigation",
+      "altitude": 450,
+      "inclination": 55.0,
+      "longitude": -120,
+      "latitude": 10,
+      "status": "Active"
+    },
+    {
+      "id": "SAT-003",
+      "name": "Earth Observation Gamma", 
+      "type": "Earth Observation",
+      "altitude": 500,
+      "inclination": 60.0,
+      "longitude": -60,
+      "latitude": 20,
+      "status": "Active"
+    },
+    {
+      "id": "SAT-004",
+      "name": "Weather Delta",
+      "type": "Weather",
+      "altitude": 550,
+      "inclination": 65.0,
+      "longitude": 0,
+      "latitude": 30,
+      "status": "Active"
+    },
+    {
+      "id": "SAT-005",
+      "name": "Scientific Epsilon",
+      "type": "Scientific",
+      "altitude": 600,
+      "inclination": 70.0,
+      "longitude": 60,
+      "latitude": 40,
+      "status": "Active"
+    }
+  ],
+  "ground_stations": [
+    {
+      "id": "GS-001",
+      "name": "Houston Mission Control",
+      "location": "Houston, Texas",
+      "coordinates": [29.7604, -95.3698],
+      "status": "Active"
+    },
+    {
+      "id": "GS-002",
+      "name": "Canberra Deep Space",
+      "location": "Canberra, Australia", 
+      "coordinates": [-35.2809, 149.1300],
+      "status": "Active"
+    },
+    {
+      "id": "GS-003",
+      "name": "Madrid Deep Space",
+      "location": "Madrid, Spain",
+      "coordinates": [40.4168, -3.7038],
+      "status": "Active"
+    }
+  ],
+  "success_criteria": {
+    "uptime": 99.9,
+    "coverage": 99.8,
+    "latency": 50,
+    "collision_risk": 0.1
+  },
+  "emergency_protocols": {
+    "auto_shutdown": true,
+    "backup_systems": true,
+    "recovery_mode": true,
+    "alert_levels": ["INFO", "WARNING", "HIGH", "CRITICAL"]
+  }
+}

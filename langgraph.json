@@ -1,0 +1,156 @@
+{
+  "name": "space-mission-agent",
+  "version": "1.0.0",
+  "description": "Autonomous Space Mission Planning & Satellite Constellation Management Agent",
+  "type": "langgraph",
+  "framework": "langgraph",
+  "entry_point": "agent_graph.py",
+  "graph_config": {
+    "nodes": [
+      {
+        "name": "orbital_mechanics",
+        "description": "Calculate real-time satellite trajectories and orbital parameters",
+        "type": "agent",
+        "capabilities": ["orbital-calculations", "trajectory-optimization"]
+      },
+      {
+        "name": "satellite_manager", 
+        "description": "Manage satellite constellation coordination and optimization",
+        "type": "agent",
+        "capabilities": ["constellation-management", "coverage-optimization"]
+      },
+      {
+        "name": "collision_avoidance",
+        "description": "Monitor and prevent satellite collisions in real-time",
+        "type": "agent", 
+        "capabilities": ["collision-detection", "avoidance-maneuvers"]
+      },
+      {
+        "name": "mission_planner",
+        "description": "Create and optimize comprehensive space mission plans",
+        "type": "agent",
+        "capabilities": ["mission-planning", "resource-allocation"]
+      },
+      {
+        "name": "ground_coordinator",
+        "description": "Manage Earth-space communication and ground station coordination",
+        "type": "agent",
+        "capabilities": ["ground-communication", "data-transmission"]
+      },
+      {
+        "name": "maintenance_agent",
+        "description": "Monitor satellite health and predict maintenance needs",
+        "type": "agent",
+        "capabilities": ["health-monitoring", "predictive-maintenance"]
+      },
+      {
+        "name": "space_debris_monitor",
+        "description": "Monitor space debris and prevent satellite collisions",
+        "type": "agent",
+        "capabilities": ["debris-tracking", "collision-prevention"]
+      }
+    ],
+    "edges": [
+      {
+        "from": "orbital_mechanics",
+        "to": "satellite_manager",
+        "description": "Orbital data flows to satellite management"
+      },
+      {
+        "from": "satellite_manager", 
+        "to": "collision_avoidance",
+        "description": "Satellite positions used for collision analysis"
+      },
+      {
+        "from": "collision_avoidance",
+        "to": "mission_planner", 
+        "description": "Collision threats inform mission planning"
+      },
+      {
+        "from": "mission_planner",
+        "to": "ground_coordinator",
+        "description": "Mission plans coordinate ground operations"
+      },
+      {
+        "from": "ground_coordinator",
+        "to": "maintenance_agent",
+        "description": "Ground data used for maintenance analysis"
+      },
+      {
+        "from": "maintenance_agent",
+        "to": "space_debris_monitor",
+        "description": "Maintenance status affects debris monitoring"
+      }
+    ],
+    "workflow": {
+      "type": "sequential",
+      "description": "Sequential execution of space mission planning agents",
+      "parallel_execution": false,
+      "error_handling": "continue",
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_delay": 5
+      }
+    }
+  },
+  "state_schema": {
+    "mission_id": "string",
+    "satellites": "array",
+    "orbital_data": "object", 
+    "collision_threats": "array",
+    "mission_plan": "object",
+    "ground_stations": "array",
+    "space_debris": "array",
+    "maintenance_schedule": "object",
+    "current_phase": "string",
+    "decisions": "array",
+    "alerts": "array"
+  },
+  "tools": [
+    {
+      "name": "calculate_orbital_mechanics",
+      "description": "Calculate satellite orbital mechanics and trajectories",
+      "type": "function"
+    },
+    {
+      "name": "detect_collision_threats", 
+      "description": "Detect potential satellite collision threats",
+      "type": "function"
+    },
+    {
+      "name": "optimize_constellation_coverage",
+      "description": "Optimize satellite constellation for maximum coverage",
+      "type": "function"
+    },
+    {
+      "name": "predict_satellite_maintenance",
+      "description": "Predict satellite maintenance needs using AI",
+      "type": "function"
+    },
+    {
+      "name": "monitor_space_debris",
+      "description": "Monitor space debris and assess collision risks",
+      "type": "function"
+    },
+    {
+      "name": "coordinate_ground_stations",
+      "description": "Coordinate ground station communications with satellites",
+      "type": "function"
+    }
+  ],
+  "llm_config": {
+    "provider": "openai",
+    "model": "gpt-4o",
+    "temperature": 0.1,
+    "max_tokens": 4000,
+    "timeout": 30
+  },
+  "execution_config": {
+    "max_execution_time": 3600,
+    "memory_limit": "2GB",
+    "cpu_limit": "4 cores",
+    "parallel_agents": 7,
+    "state_persistence": true,
+    "error_recovery": true
+  }
+}

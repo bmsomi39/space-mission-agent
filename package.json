@@ -1,0 +1,47 @@
+{
+  "name": "space-mission-agent",
+  "version": "1.0.0",
+  "description": "Autonomous Space Mission Planning & Satellite Constellation Management Agent",
+  "main": "main_agent.py",
+  "scripts": {
+    "start": "python main_agent.py",
+    "test": "python test_agent.py",
+    "dev": "python -m uipath run agent",
+    "pack": "uipath pack",
+    "publish": "uipath publish",
+    "deploy": "uipath deploy"
+  },
+  "keywords": [
+    "space",
+    "satellite",
+    "autonomous",
+    "ai",
+    "mission-planning",
+    "collision-avoidance",
+    "uipath",
+    "langgraph",
+  ],
+  "author": "Bonga",
+  "license": "MIT",
+  "dependencies": {
+    "langgraph": "^0.2.0",
+    "langchain": "^0.3.0",
+    "uipath-sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "pytest": "^7.0.0",
+    "black": "^23.0.0",
+    "flake8": "^6.0.0"
+  },
+  "engines": {
+    "python": ">=3.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bonga/space-mission-agent"
+  },
+  "bugs": {
+    "url": "https://github.com/bonga/space-mission-agent/issues"
+  },
+  "homepage": "https://github.com/bonga/space-mission-agent#readme"
+}

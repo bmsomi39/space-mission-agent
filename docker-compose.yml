@@ -1,0 +1,21 @@
+# 🚀 Space Mission Agent - Docker Compose
+# Easy deployment with one command!
+
+services:
+  space-mission-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: space-mission-agent
+    image: space-mission-agent:latest
+    volumes:
+      # Mount current directory for live updates
+      - .:/app
+      # Mount .env file if it exists
+      - ./.env:/app/.env:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+    stdin_open: true
+    tty: true
+    command: python cli.py
+

@@ -1,0 +1,433 @@
+{
+  "mission_id": "6228c7de-4c50-4929-a717-a9d25376ccc7",
+  "mission_name": "Autonomous Space Mission",
+  "mission_phase": "completed",
+  "start_time": "2025-11-03T14:11:24.955111",
+  "last_update": "2025-11-03T14:12:15.727423",
+  "satellites": [
+    {
+      "id": "SAT-001",
+      "name": "Communication Alpha",
+      "type": "Communication",
+      "status": "Operational",
+      "altitude": 400,
+      "inclination": 51.6,
+      "longitude": -180,
+      "latitude": 0,
+      "velocity": 7.5,
+      "battery_level": 90,
+      "signal_strength": 90,
+      "temperature": 20,
+      "power_consumption": 1000,
+      "data_throughput": 100,
+      "last_contact": "2025-11-03T14:12:15.722462",
+      "health_score": 95,
+      "maintenance_due": false,
+      "collision_risk": 0.01
+    },
+    {
+      "id": "SAT-002",
+      "name": "Navigation Beta",
+      "type": "Navigation",
+      "status": "Operational",
+      "altitude": 450,
+      "inclination": 51.6,
+      "longitude": -108,
+      "latitude": 0,
+      "velocity": 7.5,
+      "battery_level": 93,
+      "signal_strength": 98,
+      "temperature": 20,
+      "power_consumption": 1000,
+      "data_throughput": 100,
+      "last_contact": "2025-11-03T14:12:15.722484",
+      "health_score": 95,
+      "maintenance_due": false,
+      "collision_risk": 0.01
+    },
+    {
+      "id": "SAT-003",
+      "name": "Earth Observation Gamma",
+      "type": "Earth Observation",
+      "status": "Operational",
+      "altitude": 500,
+      "inclination": 51.6,
+      "longitude": -36,
+      "latitude": 0,
+      "velocity": 7.5,
+      "battery_level": 89,
+      "signal_strength": 97,
+      "temperature": 20,
+      "power_consumption": 1000,
+      "data_throughput": 100,
+      "last_contact": "2025-11-03T14:12:15.722499",
+      "health_score": 95,
+      "maintenance_due": false,
+      "collision_risk": 0.01
+    },
+    {
+      "id": "SAT-004",
+      "name": "Weather Delta",
+      "type": "Weather",
+      "status": "Operational",
+      "altitude": 550,
+      "inclination": 51.6,
+      "longitude": 36,
+      "latitude": 0,
+      "velocity": 7.5,
+      "battery_level": 80,
+      "signal_strength": 95,
+      "temperature": 20,
+      "power_consumption": 1000,
+      "data_throughput": 100,
+      "last_contact": "2025-11-03T14:12:15.722511",
+      "health_score": 95,
+      "maintenance_due": false,
+      "collision_risk": 0.01
+    },
+    {
+      "id": "SAT-005",
+      "name": "Scientific Epsilon",
+      "type": "Scientific",
+      "status": "Operational",
+      "altitude": 600,
+      "inclination": 51.6,
+      "longitude": 108,
+      "latitude": 0,
+      "velocity": 7.5,
+      "battery_level": 76,
+      "signal_strength": 96,
+      "temperature": 20,
+      "power_consumption": 1000,
+      "data_throughput": 100,
+      "last_contact": "2025-11-03T14:12:15.722524",
+      "health_score": 95,
+      "maintenance_due": false,
+      "collision_risk": 0.01
+    }
+  ],
+  "satellite_count": 5,
+  "orbital_data": {
+    "timestamp": "2025-11-03T14:12:15.720991",
+    "satellites": [
+      {
+        "id": "SAT-001",
+        "altitude": 400,
+        "velocity": 7.5,
+        "period": 90,
+        "inclination": 51.6,
+        "longitude": -180,
+        "latitude": 0
+      },
+      {
+        "id": "SAT-002",
+        "altitude": 450,
+        "velocity": 7.6,
+        "period": 95,
+        "inclination": 53.6,
+        "longitude": -160,
+        "latitude": 5
+      },
+      {
+        "id": "SAT-003",
+        "altitude": 500,
+        "velocity": 7.7,
+        "period": 100,
+        "inclination": 55.6,
+        "longitude": -140,
+        "latitude": 10
+      },
+      {
+        "id": "SAT-004",
+        "altitude": 550,
+        "velocity": 7.8,
+        "period": 105,
+        "inclination": 57.6,
+        "longitude": -120,
+        "latitude": 15
+      },
+      {
+        "id": "SAT-005",
+        "altitude": 600,
+        "velocity": 7.9,
+        "period": 110,
+        "inclination": 59.6,
+        "longitude": -100,
+        "latitude": 20
+      }
+    ],
+    "trajectories": [
+      {
+        "satellite_id": "SAT-001",
+        "position": [
+          400,
+          0,
+          0
+        ],
+        "velocity": [
+          7.5,
+          0,
+          0
+        ],
+        "acceleration": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "satellite_id": "SAT-002",
+        "position": [
+          450,
+          0,
+          0
+        ],
+        "velocity": [
+          7.6,
+          0,
+          0
+        ],
+        "acceleration": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "satellite_id": "SAT-003",
+        "position": [
+          500,
+          0,
+          0
+        ],
+        "velocity": [
+          7.7,
+          0,
+          0
+        ],
+        "acceleration": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "satellite_id": "SAT-004",
+        "position": [
+          550,
+          0,
+          0
+        ],
+        "velocity": [
+          7.8,
+          0,
+          0
+        ],
+        "acceleration": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "satellite_id": "SAT-005",
+        "position": [
+          600,
+          0,
+          0
+        ],
+        "velocity": [
+          7.9,
+          0,
+          0
+        ],
+        "acceleration": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "orbital_periods": [],
+    "velocity_vectors": []
+  },
+  "trajectory_predictions": [],
+  "collision_threats": [],
+  "avoidance_maneuvers": [],
+  "mission_plan": {
+    "mission_id": "6228c7de-4c50-4929-a717-a9d25376ccc7",
+    "objectives": [
+      "Maintain global satellite coverage",
+      "Prevent collision incidents",
+      "Optimize data transmission",
+      "Schedule maintenance operations"
+    ],
+    "timeline": {
+      "start": "2025-11-03T14:12:15.724162",
+      "duration": "24 hours",
+      "phases": [
+        "Initialization",
+        "Operation",
+        "Maintenance",
+        "Optimization"
+      ]
+    },
+    "resources": {
+      "satellites": 5,
+      "ground_stations": 5,
+      "bandwidth": "100 Gbps",
+      "power": "Solar + Battery"
+    },
+    "success_metrics": {
+      "uptime": "99.9%",
+      "coverage": "99.8%",
+      "latency": "< 50ms",
+      "collision_risk": "< 0.1%"
+    }
+  },
+  "objectives": [
+    "Maintain 99.9% satellite uptime",
+    "Ensure 99.8% global coverage",
+    "Keep communication latency < 50ms",
+    "Prevent all collision incidents",
+    "Optimize resource utilization"
+  ],
+  "timeline": {},
+  "resources": {},
+  "ground_stations": [
+    {
+      "id": "GS-001",
+      "location": "Houston, Texas",
+      "coordinates": [
+        29.7604,
+        -95.3698
+      ],
+      "status": "Active",
+      "satellites_connected": 3,
+      "data_rate": "1 Gbps"
+    },
+    {
+      "id": "GS-002",
+      "location": "Canberra, Australia",
+      "coordinates": [
+        -35.2809,
+        149.13
+      ],
+      "status": "Active",
+      "satellites_connected": 2,
+      "data_rate": "1 Gbps"
+    },
+    {
+      "id": "GS-003",
+      "location": "Madrid, Spain",
+      "coordinates": [
+        40.4168,
+        -3.7038
+      ],
+      "status": "Active",
+      "satellites_connected": 2,
+      "data_rate": "1 Gbps"
+    }
+  ],
+  "communication_links": [],
+  "maintenance_schedule": {
+    "timestamp": "2025-11-03T14:12:15.725579",
+    "satellites_analyzed": 5,
+    "maintenance_required": [
+      {
+        "satellite_id": "SAT-001",
+        "issue": "Battery degradation",
+        "priority": "HIGH",
+        "scheduled_time": "2025-11-05T06:12:15.725621"
+      }
+    ],
+    "predictions": []
+  },
+  "maintenance_tasks": [],
+  "health_monitoring": {},
+  "space_debris": [
+    {
+      "id": "DEB-001",
+      "size": "10 cm",
+      "velocity": "7.5 km/s",
+      "orbit": "LEO",
+      "threat_level": "LOW",
+      "tracking_accuracy": "95%"
+    },
+    {
+      "id": "DEB-002",
+      "size": "5 cm",
+      "velocity": "7.8 km/s",
+      "orbit": "LEO",
+      "threat_level": "MEDIUM",
+      "tracking_accuracy": "98%"
+    }
+  ],
+  "debris_threats": [],
+  "alerts": [
+    {
+      "type": "SPACE_DEBRIS",
+      "severity": "MEDIUM",
+      "message": "Monitoring 1 debris objects with collision risk",
+      "timestamp": "2025-11-03T14:12:15.726351"
+    }
+  ],
+  "decisions": [
+    {
+      "agent": "orbital_mechanics",
+      "timestamp": "2025-11-03T14:12:15.721033",
+      "decision": "Calculated optimal orbital trajectories for all satellites",
+      "confidence": 0.95
+    },
+    {
+      "agent": "satellite_manager",
+      "timestamp": "2025-11-03T14:12:15.722527",
+      "decision": "Optimized constellation for maximum global coverage",
+      "confidence": 0.92
+    },
+    {
+      "agent": "collision_avoidance",
+      "timestamp": "2025-11-03T14:12:15.723447",
+      "decision": "Analyzed collision risks: 0 threats detected",
+      "confidence": 0.98
+    },
+    {
+      "agent": "mission_planner",
+      "timestamp": "2025-11-03T14:12:15.724173",
+      "decision": "Created optimized mission plan with 99.9% success probability",
+      "confidence": 0.94
+    },
+    {
+      "agent": "ground_coordinator",
+      "timestamp": "2025-11-03T14:12:15.724919",
+      "decision": "Coordinated global ground station network for optimal coverage",
+      "confidence": 0.96
+    },
+    {
+      "agent": "maintenance_agent",
+      "timestamp": "2025-11-03T14:12:15.725705",
+      "decision": "Analyzed 5 satellites, 1 require maintenance",
+      "confidence": 0.91
+    },
+    {
+      "agent": "space_debris_monitor",
+      "timestamp": "2025-11-03T14:12:15.726361",
+      "decision": "Monitoring 2 debris objects, 1 pose collision risk",
+      "confidence": 0.93
+    }
+  ],
+  "performance_metrics": {
+    "mission_duration": "0:00:50.772259",
+    "satellites_managed": 5,
+    "collision_threats_detected": 0,
+    "maintenance_tasks_scheduled": 0,
+    "alerts_generated": 1,
+    "decisions_made": 7,
+    "ground_stations_active": 3,
+    "space_debris_monitored": 2
+  },
+  "system_health": {},
+  "errors": [],
+  "recovery_actions": [],
+  "current_phase": "orbital_calculation"
+}
